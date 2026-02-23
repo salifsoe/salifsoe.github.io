@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Salifsoe — Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <img id="avatar" class="avatar" src="" alt="avatar">
+        <h1 id="name">salifsoe</h1>
+        <p id="subtitle">Creative Developer • Projects from GitHub</p>
+        <nav>
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn ghost">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="filters">
+          <input id="search" type="search" placeholder="Search projects by name or description…" aria-label="Search projects">
+          <select id="lang-filter" aria-label="Filter by language">
+            <option value="">All languages</option>
+          </select>
+        </div>
+        <div id="projects-grid" class="grid" aria-live="polite"></div>
+      </section>
+
+      <section id="about" class="about">
+        <h2>About</h2>
+        <p id="location">Location: United Arab Emirates</p>
+        <p id="bio">No bio provided — this site was auto-generated from GitHub.</p>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Find me on GitHub: <a id="gh-link" href="https://github.com/salifsoe">github.com/salifsoe</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> salifsoe • Built with a creative template</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
