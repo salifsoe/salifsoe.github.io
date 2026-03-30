@@ -1,41 +1,54 @@
-# Portfolio (auto-generated)
+# Portfolio — Salif Sow
 
-This folder contains a creative GitHub Pages-ready portfolio scaffold generated from your GitHub profile.
+Portfolio personnel statique, hébergé sur GitHub Pages.  
+Langue : français (avec quelques libellés EN).  
+Projets : sélection manuelle via `projects.json` (max 6 affichés).  
+Pas de fetch GitHub API.
 
-How to publish on GitHub Pages
+## Contenu
 
-1. Create a new repository named `your-username.github.io` (replace `your-username`).
-2. Commit and push the contents of this folder to the repository's `main` branch.
-3. GitHub Pages will serve the site at `https://your-username.github.io` shortly after push.
+- **Hero** : Salif Sow, avatar tech (SVG), liens GitHub/LinkedIn/Contact
+- **Projets** : cartes depuis `projects.json`, recherche + filtre par langage
+- **About** : bio FR courte, localisation
+- **Contact** : GitHub, LinkedIn, email
+- **Footer** : année dynamique
 
-Quick commands:
+## Personnalisation
 
-```bash
-git init
-git add .
-git commit -m "Initial portfolio"
-git branch -M main
-git remote add origin https://github.com/salifsoe/salifsoe.github.io.git
-git push -u origin main
-```
+- Modifier `projects.json` pour ajouter/modifier des projets
+- Adapter `css/style.css` pour le style
+- Adapter `js/main.js` pour le comportement (nombre de projets, filtres)
 
-Notes
-- The site fetches live data from the GitHub API (profile and repositories).
-- Customize `index.html`, `css/style.css`, and `js/main.js` as desired.
-
-Local testing
-- Run a lightweight local server (PowerShell):
+## Local testing
 
 ```powershell
-.\serve.ps1
-# then open http://localhost:8000
+python -m http.server 8000
+# ou
+py -m http.server 8000
+# puis ouvrir http://localhost:8000
 ```
 
-GitHub Pages CI (workflow)
-- A GitHub Actions workflow is included at `.github/workflows/deploy.yml`.
-- The workflow publishes the repository root to GitHub Pages on pushes to the `main` branch.
+## Publication GitHub Pages
 
-Finalize checklist
-- Create a repository named `salifsoe.github.io` (or use any repo and configure Pages). 
-- Push this folder to `main`. The workflow will run and Pages will publish.
-- If you prefer the classic `gh-pages` branch approach, I can add that instead.
+Le dépôt est déjà configuré pour GitHub Pages via la branche `main`.  
+Après un `git push origin main`, le site se met à jour automatiquement à :
+
+https://salifsoe.github.io
+
+## Structure
+
+```
+/
+├── index.html          # page principale
+├── css/
+│   └── style.css       # styles
+├── js/
+│   └── main.js         # logique (projets, filtres, année)
+├── images/
+│   └── avatar-tech.svg # avatar tech
+└── projects.json       # projets (statique)
+```
+
+## Licence / crédit
+
+Template de portfolio personnalisé. Conserve cette mention si tu le réutilises.
