@@ -4,5 +4,11 @@
     "url": "https://github.com/salifsoe/programing_scripting_project",
     "description": "CTA Automated Ticketing System (Centrala Transport Authority)",
     "language": "Python"
+  },
+  {
+    "name": "afrisend",
+    "url": "https://github.com/salifsoe/afrisend",
+    "description": "Plateforme de livraison et de logistique pour l'Afrique",
+    "language": "JavaScript"
   }
 ]
