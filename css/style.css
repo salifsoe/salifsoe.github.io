@@ -298,6 +298,89 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
+/* Developer Badges */
+.dev-badges {
+  margin-top: 32px;
+}
+
+.dev-badges h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.dev-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background: var(--card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.dev-badge::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.dev-badge:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4), var(--glow);
+  border-color: var(--accent);
+  background: var(--card-hover);
+}
+
+.dev-badge:hover::before {
+  opacity: 0.02;
+}
+
+.dev-badge img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.dev-badge:hover img {
+  transform: scale(1.1);
+}
+
+.dev-badge span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.dev-badge:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 /* Footer */
 .site-footer {
   padding: 40px 0;
